@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getNew = exports.getArtist = exports.getPlaylist = exports.getAlbum = exports.getTrack = exports.Client = void 0;
+var client_1 = require("./client");
+Object.defineProperty(exports, "Client", { enumerable: true, get: function () { return client_1.Client; } });
+var track_1 = require("./calls/track");
+Object.defineProperty(exports, "getTrack", { enumerable: true, get: function () { return track_1.getTrack; } });
+var album_1 = require("./calls/album");
+Object.defineProperty(exports, "getAlbum", { enumerable: true, get: function () { return album_1.getAlbum; } });
+var playlist_1 = require("./calls/playlist");
+Object.defineProperty(exports, "getPlaylist", { enumerable: true, get: function () { return playlist_1.getPlaylist; } });
+var artist_1 = require("./calls/artist");
+Object.defineProperty(exports, "getArtist", { enumerable: true, get: function () { return artist_1.getArtist; } });
+var new_1 = require("./calls/new");
+Object.defineProperty(exports, "getNew", { enumerable: true, get: function () { return new_1.getNew; } });
